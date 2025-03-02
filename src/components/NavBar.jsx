@@ -1,23 +1,17 @@
 //src/componente/NavBar.jsx
-import React from "react";
-import CartWidget from "./CartWidget";
-import logo from '../images/Logo celeste.png';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-const NavBar = () => {
-    return (
-        <nav className="navbar">
-            <div className="navbar-brand">
-            <img src={logo} alt="Logo de Mi Tienda" style={{ height: '200px' }} />
-                <h1>Mi Tienda</h1>
-            </div>
-            <ul className="navbar-links">
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/productos">Productos</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-            </ul>
-            <CartWidget />
-        </nav>
-    );
-};
-
-export default NavBar;
+export const NavBar = () => (
+      <Navbar bg="primary" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+);
