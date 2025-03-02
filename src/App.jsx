@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from './components/NavBar';
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
+import { ItemListContainer } from './components/ItemListContainer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="*" element={<h2>404 Not Found</h2>} />
       </Routes>
+      <ItemListContainer/>
   </>
   );
 }
