@@ -1,4 +1,4 @@
-const items = [
+export const items = [
     {
       id: 1,
       imagen: "https://source.unsplash.com/400x300/?nature",
