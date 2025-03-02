@@ -1,1 +1,17 @@
-export const ItemListContainer = () => <h1>Hola</h1>
+// src/components/ItemListContainer.jsx
+import React from 'react';
+
+const ItemListContainer = ({ products }) => {
+  return (
+    <div>
+      <h2>Listado de Productos</h2>
+      <ul>
+        {products.map(product => (
+          <li key={product.id}>{product.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ItemListContainer;
