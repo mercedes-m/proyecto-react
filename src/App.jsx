@@ -6,11 +6,10 @@ import './App.css'
 
 function App() {
   return (
-      <div className="App">
+      <>
             <NavBar />
-            <ItemListContainer greeting="¡Bienvenido a nuestra tienda!" />
-        </div>
-  )
+        </>
+  );
 }
 
 export default App
