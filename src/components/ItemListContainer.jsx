@@ -1,5 +1,7 @@
 // src/components/ItemListContainer.jsx
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import { items } from '../data/data';
 
 const ItemListContainer = ({ products }) => {
   return (
