@@ -1,22 +1,20 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import { Link } from "react-router-dom";
+// src/components/Item.jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export const ItemList = ({ items }) => {
-    return (
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-        {items.map((item) => (
-          <Card key={item.id} style={{ width: "18rem", margin: "10px" }}>
-            <Card.Img variant="top" src={item.imagen} alt={item.titulo} />
-            <Card.Body>
-              <Card.Title>{item.titulo}</Card.Title>
-              <Card.Text>{item.descripcion}</Card.Text>
-              <Link to={`/item/${item.id}`}>
-                <Button variant="primary">Ver Detalle</Button>
-              </Link>
-            </Card.Body>
-          </Card>
-        ))}
+const Item = ({ item }) => {
+  return (
+    <div className="card" style={{ width: '18rem' }}>
+      <img src={item.imagen} className="card-img-top" alt={item.titulo} />
+      <div className="card-body">
+        <h5 className="card-title">{item.titulo}</h5>
+        <p className="card-text">{item.descripcion}</p>
+        <Link to={`/product/${item.id}`} className="btn btn-primary">
+          Ver Detalle
+        </Link>
       </div>
-    );
-  };  
+    </div>
+  );
+};
+
+export default Item;
