@@ -14,8 +14,7 @@ const ItemListContainer = () => (
         <Card.Body>
           <Card.Title>{item.titulo}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+           {item.descripcion}
           </Card.Text>
           <Button variant="primary">Agregar al Carrito</Button>
         </Card.Body>
