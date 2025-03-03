@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import { items } from '../data/data';
 
 const ItemListContainer = () => (
-    <Container>
+    <Container classname= "d-flex mt-4">
       <h2>Listado de Productos</h2>
       <div className="d-flex flex-wrap justify-content-around">
       {items.map((item) => (
