@@ -3,6 +3,9 @@ import { Navbar } from './components/NavBar';
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import { ItemListContainer } from './components/ItemListContainer';
+import Home from './pages/Home'; 
+import Category from './pages/Category'; 
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
