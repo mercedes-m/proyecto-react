@@ -1,21 +1,21 @@
 export const items = [
     {
       id: 1,
-      imagen: "https://source.unsplash.com/400x300/?nature",
-      titulo: "Paisaje Natural",
-      descripcion: "Una hermosa vista de la naturaleza con montañas y un lago cristalino."
+      imagen: require('../images/buzo blanco.jpg'),
+      titulo: "Buzo Blanco",
+      descripcion: "Buzo blanco de algodón."
     },
     {
       id: 2,
-      imagen: "https://source.unsplash.com/400x300/?technology",
-      titulo: "Innovación Tecnológica",
-      descripcion: "Un primer plano de circuitos electrónicos que representan la evolución digital."
+      imagen: require('../images/swater rayado.jpg'),
+      titulo: "Sweater Rayado",
+      descripcion: "Sweater rayado de hilo azul y blanco."
     },
     {
       id: 3,
-      imagen: "https://source.unsplash.com/400x300/?architecture",
-      titulo: "Arquitectura Moderna",
-      descripcion: "Un impresionante rascacielos con un diseño vanguardista y líneas minimalistas."
+      imagen: require('../images/sweater blanco.jpg'),
+      titulo: "Sweater Blanco",
+      descripcion: "Sweater blanco de lana con cuello alto."
     }
   ];
   
