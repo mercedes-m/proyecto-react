@@ -17,3 +17,5 @@ const NavBar = ({ itemCount }) => {
     </Navbar>
   );
 };
+
+export default NavBar;
