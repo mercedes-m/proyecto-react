@@ -10,8 +10,8 @@ const NavBar = ({ itemCount }) => {
       <Navbar.Brand as={Link} to="/">Mi Tienda</Navbar.Brand>
       <Nav className="me-auto">
         <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-        <Nav.Link as={Link} to="/category/electronics">Electrónica</Nav.Link>
-        <Nav.Link as={Link} to="/category/clothing">Ropa</Nav.Link>
+        <Nav.Link as={Link} to="/category/electronics">Sweaters</Nav.Link>
+        <Nav.Link as={Link} to="/category/clothing">Pantalones</Nav.Link>
       </Nav>
       <CartWidget itemCount={itemCount} />
     </Navbar>
