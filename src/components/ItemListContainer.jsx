@@ -1,8 +1,8 @@
 // src/components/ItemListContainer.jsx
 import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
-import ItemList from './ItemList'; // Asegúrate de que la ruta sea correcta
-import { items } from '../data/data'; // Suponiendo que tienes un archivo de datos
+import ItemList from './ItemList'; 
+import { items } from '../data/data'; 
 
 const ItemListContainer = () => {
   const [itemsList, setItemsList] = useState([]); // Estado para almacenar los productos
@@ -14,9 +14,9 @@ const ItemListContainer = () => {
     const fetchItems = async () => {
       try {
         setLoading(true); // Iniciar carga
-        // Simulamos un retardo para la llamada a la API
+        // Simula un retardo para la llamada a la API
         const response = await new Promise((resolve) =>
-          setTimeout(() => resolve(items), 1000) // Simulando un retardo de 1 segundo
+          setTimeout(() => resolve(items), 1000) // Simula retardo de 1 segundo
         );
         setItemsList(response); // Establecer los productos en el estado
       } catch (err) {
