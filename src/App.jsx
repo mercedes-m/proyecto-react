@@ -6,10 +6,12 @@ import  ItemListContainer from './components/ItemListContainer';
 import Home from './pages/Home'; 
 import Category from './pages/Category'; 
 import ProductDetail from './pages/ProductDetail';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
   <>  
+  <ErrorBoundary>
   <BrowserRouter>
   <NavBar />
   <Routes>
@@ -19,6 +21,7 @@ function App() {
         <Route path="*" element={<h2>404 Not Found</h2>} />
       </Routes>
       </BrowserRouter>
+      </ErrorBoundary>
   </>
   );
 }
