@@ -10,7 +10,6 @@ import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
-  <>  
   <ErrorBoundary>
   <BrowserRouter>
   <NavBar />
@@ -22,7 +21,6 @@ function App() {
       </Routes>
       </BrowserRouter>
       </ErrorBoundary>
-  </>
   );
 }
 
