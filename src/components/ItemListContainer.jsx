@@ -6,7 +6,7 @@ import ItemList from './ItemList';
 import { items } from '../data/data'; 
 
 const ItemListContainer = () => {
-  const { id } = useParams(); // Obtiene el parámetro de la URL
+  const { categoryId } = useParams(); // Obtiene el parámetro de la URL
   const [itemsList, setItemsList] = useState([]); // Estado para almacenar los productos
   const [loading, setLoading] = useState(true); // Estado para manejar la carga
   const [error, setError] = useState(null); // Estado para manejar errores
@@ -20,7 +20,9 @@ const ItemListContainer = () => {
         const response = await new Promise((resolve) =>
           setTimeout(() => resolve(items), 1000) // Simula retardo de 1 segundo
         );
-        setItemsList(response); // Establecer los productos en el estado
+        //Filtrar los items según categoryId
+        const filteredItems = response.filter(item => item.categoryId === categoryId);
+        setItemsList(filteredItems); // Establecer los productos en el estado
       } catch (err) {
         setError('Error al cargar los productos'); // Manejo de errores
       } finally {
@@ -29,7 +31,7 @@ const ItemListContainer = () => {
     };
 
     fetchItems();
-  }, []); // Dependencias vacías para que se ejecute solo una vez al montar el componente
+  }, [categoryId]); 
 
   if (loading) {
     return <div>Cargando...</div>; // Mensaje de carga
