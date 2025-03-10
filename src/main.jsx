@@ -13,5 +13,5 @@ root.render(
     <BrowserRouter> {/* Envuelve App con BrowserRouter para el enrutamiento */}
       <App />
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 );
