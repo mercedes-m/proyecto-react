@@ -10,6 +10,7 @@ import ProductDetail from './pages/ProductDetail';
 function App() {
   return (
   <>  
+  <BrowserRouter>
   <NavBar />
   <Routes>
         <Route path="/" element={<Home />} />
@@ -17,6 +18,7 @@ function App() {
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="*" element={<h2>404 Not Found</h2>} />
       </Routes>
+      </BrowserRouter>
   </>
   );
 }
