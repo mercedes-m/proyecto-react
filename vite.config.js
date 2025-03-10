@@ -7,5 +7,6 @@ export default defineConfig({
   base: "/proyecto-react/",
   server: {
     port: 5173,
+    open: true,
 },
 });
