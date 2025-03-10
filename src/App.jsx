@@ -10,7 +10,6 @@ import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
-  <ErrorBoundary>
   <BrowserRouter>
   <NavBar />
   <Routes>
@@ -20,7 +19,6 @@ function App() {
         <Route path="*" element={<h2>404 Not Found</h2>} />
       </Routes>
       </BrowserRouter>
-      </ErrorBoundary>
   );
 }
 
