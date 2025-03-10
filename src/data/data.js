@@ -1,6 +1,6 @@
-import buzoBlanco from '../images/buzo_blanco.jpg';
-import sweaterRayado from '../images/sweater_rayado.jpg'; 
-import sweaterBlanco from '../images/sweater_blanco.jpg';
+import buzoBlanco from '../images/buzo blanco.jpg';
+import sweaterRayado from '../images/sweater rayado.jpg'; 
+import sweaterBlanco from '../images/sweater blanco.jpg';
 
 export const items = [
     {
