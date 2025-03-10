@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/proyecto-react/",
   server: {
-    port: 5173,
+    port: 4000,
     open: true,
 },
 });
