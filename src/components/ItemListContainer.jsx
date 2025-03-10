@@ -6,6 +6,7 @@ import ItemList from './ItemList';
 import { items } from '../data/data'; 
 
 const ItemListContainer = () => {
+  const { id } = useParams(); // Obtiene el parámetro de la URL
   const [itemsList, setItemsList] = useState([]); // Estado para almacenar los productos
   const [loading, setLoading] = useState(true); // Estado para manejar la carga
   const [error, setError] = useState(null); // Estado para manejar errores
