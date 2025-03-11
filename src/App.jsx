@@ -9,15 +9,15 @@ import ProductDetail from './pages/ProductDetail';
 import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
-  return (
-    <> 
+  return ( 
+    <>
     <NavBar />
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/category/:categoryId" element={<Category />} />
       <Route path="/product/:productId" element={<ProductDetail />} />
       <Route path="*" element={<h2>404 Not Found</h2>} />
-    </Routes></>
+    </Routes>
     </>
   );
 }
